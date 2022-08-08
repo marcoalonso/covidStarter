@@ -11,7 +11,7 @@
         <!--Estadisticas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidAppcfe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EstadisticasViewController" customModule="CovidAppcfe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,14 +28,29 @@
                                                     <constraint firstAttribute="height" constant="250" id="ILf-dr-D8o"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrM-5D-Nxq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrM-5D-Nxq" customClass="PaddingLabel" customModule="CovidAppcfe" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="265" width="414" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="SgB-Fy-dZO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zn4-Ep-r0D">
                                                 <rect key="frame" x="0.0" y="320" width="414" height="35"/>
@@ -124,17 +139,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Estadisticas" id="rev-Cg-ZPk"/>
                     <connections>
-                        <segue destination="vub-2X-4iB" kind="show" id="zkw-go-3Wv"/>
+                        <outlet property="fechaLabel" destination="ZDU-cV-qmg" id="yBZ-zv-uWA"/>
+                        <outlet property="searchPaise" destination="QBR-nf-rKV" id="gBY-Oj-puX"/>
+                        <outlet property="tablaPaises" destination="2Qi-Z8-MUz" id="axY-iv-NzH"/>
+                        <outlet property="totalConfirmados" destination="VrM-5D-Nxq" id="mGl-GC-eUc"/>
+                        <outlet property="totalMuertes" destination="zn4-Ep-r0D" id="ZBU-sO-nGb"/>
+                        <segue destination="vub-2X-4iB" kind="show" identifier="paisCovid" id="zkw-go-3Wv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="786" y="60"/>
         </scene>
-        <!--View Controller-->
+        <!--Vista Detallada View Controller-->
         <scene sceneID="5oz-S9-SLe">
             <objects>
-                <viewController id="vub-2X-4iB" sceneMemberID="viewController">
+                <viewController id="vub-2X-4iB" customClass="VistaDetalladaViewController" customModule="CovidAppcfe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6nk-7T-Rwc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,10 +190,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tsh-FZ-XrN"/>
+                    <connections>
+                        <outlet property="countryLabel" destination="4oJ-R7-Dre" id="wdN-OL-X9k"/>
+                        <outlet property="mapa" destination="13U-fE-5jA" id="4Kw-Em-W62"/>
+                        <outlet property="totalDeathsLabel" destination="kn0-Ai-0Vp" id="6gd-oz-Ats"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgx-Oj-tka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521.7391304347827" y="65.625"/>
+            <point key="canvasLocation" x="1655" y="52"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rho-Dp-5u9">
@@ -199,6 +224,9 @@
         <image name="logo" width="1200" height="630"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

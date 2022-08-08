@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		6011627728A194B6009836BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011627628A194B6009836BF /* AppDelegate.swift */; };
 		6011627928A194B6009836BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011627828A194B6009836BF /* SceneDelegate.swift */; };
-		6011627B28A194B6009836BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011627A28A194B6009836BF /* ViewController.swift */; };
+		6011627B28A194B6009836BF /* EstadisticasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011627A28A194B6009836BF /* EstadisticasViewController.swift */; };
 		6011627E28A194B6009836BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6011627C28A194B6009836BF /* Main.storyboard */; };
 		6011628028A194B9009836BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6011627F28A194B9009836BF /* Assets.xcassets */; };
 		6011628328A194B9009836BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6011628128A194B9009836BF /* LaunchScreen.storyboard */; };
+		6011628B28A19A9E009836BF /* VistaDetalladaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011628A28A19A9E009836BF /* VistaDetalladaViewController.swift */; };
+		6011628D28A19CD2009836BF /* Extension+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011628C28A19CD1009836BF /* Extension+Label.swift */; };
+		6011629028A19DB6009836BF /* CovidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011628F28A19DB6009836BF /* CovidManager.swift */; };
+		6011629228A19DC7009836BF /* CovidDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011629128A19DC7009836BF /* CovidDatos.swift */; };
+		6011629428A19DD2009836BF /* PaisDatos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6011629328A19DD2009836BF /* PaisDatos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6011627328A194B6009836BF /* CovidAppcfe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidAppcfe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6011627628A194B6009836BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6011627828A194B6009836BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6011627A28A194B6009836BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6011627A28A194B6009836BF /* EstadisticasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstadisticasViewController.swift; sourceTree = "<group>"; };
 		6011627D28A194B6009836BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6011627F28A194B9009836BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6011628228A194B9009836BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6011628428A194B9009836BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6011628A28A19A9E009836BF /* VistaDetalladaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDetalladaViewController.swift; sourceTree = "<group>"; };
+		6011628C28A19CD1009836BF /* Extension+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Label.swift"; sourceTree = "<group>"; };
+		6011628F28A19DB6009836BF /* CovidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidManager.swift; sourceTree = "<group>"; };
+		6011629128A19DC7009836BF /* CovidDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidDatos.swift; sourceTree = "<group>"; };
+		6011629328A19DD2009836BF /* PaisDatos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaisDatos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,28 @@
 		6011627528A194B6009836BF /* CovidAppcfe */ = {
 			isa = PBXGroup;
 			children = (
+				6011628E28A19DA5009836BF /* Model */,
 				6011627628A194B6009836BF /* AppDelegate.swift */,
 				6011627828A194B6009836BF /* SceneDelegate.swift */,
-				6011627A28A194B6009836BF /* ViewController.swift */,
+				6011627A28A194B6009836BF /* EstadisticasViewController.swift */,
 				6011627C28A194B6009836BF /* Main.storyboard */,
 				6011627F28A194B9009836BF /* Assets.xcassets */,
 				6011628128A194B9009836BF /* LaunchScreen.storyboard */,
 				6011628428A194B9009836BF /* Info.plist */,
+				6011628A28A19A9E009836BF /* VistaDetalladaViewController.swift */,
+				6011628C28A19CD1009836BF /* Extension+Label.swift */,
 			);
 			path = CovidAppcfe;
+			sourceTree = "<group>";
+		};
+		6011628E28A19DA5009836BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6011628F28A19DB6009836BF /* CovidManager.swift */,
+				6011629128A19DC7009836BF /* CovidDatos.swift */,
+				6011629328A19DD2009836BF /* PaisDatos.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6011627B28A194B6009836BF /* ViewController.swift in Sources */,
+				6011627B28A194B6009836BF /* EstadisticasViewController.swift in Sources */,
+				6011629228A19DC7009836BF /* CovidDatos.swift in Sources */,
+				6011629428A19DD2009836BF /* PaisDatos.swift in Sources */,
 				6011627728A194B6009836BF /* AppDelegate.swift in Sources */,
 				6011627928A194B6009836BF /* SceneDelegate.swift in Sources */,
+				6011629028A19DB6009836BF /* CovidManager.swift in Sources */,
+				6011628D28A19CD2009836BF /* Extension+Label.swift in Sources */,
+				6011628B28A19A9E009836BF /* VistaDetalladaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
